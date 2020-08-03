@@ -1,19 +1,30 @@
-## :cow: Cowsay @coachdefracassos
+## :dragon: Bushido dragon
 
 ```
- ________________________
-< lute como nunca perca como sempre >
- ------------------------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||--WWW |
-                ||     ||
+/ No masterpiece was ever created by a \
+\ lazy artist.                         /
+ --------------------------------------
+      \                    / \  //\
+       \    |\___/|      /   \//  \\
+            /0  0  \__  /    //  | \ \    
+           /     /  \/_/    //   |  \  \  
+           @_^_@'/   \/_   //    |   \   \ 
+           //_^_/     \/_ //     |    \    \
+        ( //) |        \///      |     \     \
+      ( / /) _|_ /   )  //       |      \     _\
+    ( // /) '/,_ _ _/  ( ; -.    |    _ _\.-~        .-~~~^-.
+  (( / / )) ,-{        _      `-.|.-~-.           .~         `.
+ (( // / ))  '/\      /                 ~-. _ .-~      .-~^-.  \
+ (( /// ))      `.   {            }                   /      \  \
+  (( / ))     .----~-.\        \-'                 .~         \  `. \^-.
+             ///.----..>        \             _ -~             `.  ^-`  ^-_
+               ///-._ _ _ _ _ _ _}^ - - - - ~                     ~-- ,.-~
+                                                                  /.-~
 
 ```
-Comece o dia com frases "motivadoras" no seu terminal.
+Inspiring quotes in your terminal.
 
-## Requisitos
+## Requirements
 
 * Jq
 ```
@@ -34,8 +45,8 @@ sudo apt install cowsay
 
 
 
-Se você utiliza o **bash**, cole o script abaixo no arquivo **.bashrc**. Ou se você utiliza o **zsh**, cole no arquivo **.zshrc**
+If you use **bash**, paste the script below in the **.bashrc**. Or, if your use **zsh**, paste in the file **.zshrc**
  
 ```
-curl -s  https://raw.githubusercontent.com/julianosirtori/Cowsay-coachdefracassos/master/frases.json | jq -r '.[] | .frase ' | sort -R | head -n 1 | cowsay -f www
+curl -s  https://raw.githubusercontent.com/pemtajo/bushido-dragon/master/quotes.json | jq -r '.[] | .quote ' | sort -R | head -n 1 | cowsay -f dragon
 ```
